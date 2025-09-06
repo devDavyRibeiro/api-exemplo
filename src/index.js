@@ -21,4 +21,8 @@ app.listen(port, () => {
   console.log(`Listening http://localhost:${port}`);
 });
 
+app.post('/api/conflito', (req, res) => {
+  res.send({ message: 'Endpoint de teste na branch master com merge'});
+});
+
 module.exports = app;
