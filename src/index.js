@@ -17,6 +17,11 @@ app.get('/api/test-2', (req, res) => {
   res.send({ message: 'Branch master endpoint teste 2'});
 });
 
+
+app.get('/api/test3', (req, res) => {
+  res.send({ message: 'Endpoint de teste na branch master com merge'});
+});
+
 app.post('/api/test',(req, res)=>{
   res.send({message:"Branch criando a nova feature post"})
 })
