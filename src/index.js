@@ -9,28 +9,8 @@ app.get('/api', (req, res) => {
   res.send('Bom dia!');
 });
 
-app.get('/api/test', (req, res) => {
-  res.send({ message: 'Endpoint de teste na branch master com merge'});
-});
-
-app.get('/api/test-2', (req, res) => {
-  res.send({ message: 'Branch master endpoint teste 2'});
-});
-
-
-app.get('/api/test3', (req, res) => {
-  res.send({ message: 'Endpoint de teste na branch master com merge'});
-});
-
-app.post('/api/test',(req, res)=>{
-  res.send({message:"Branch criando a nova feature post"})
-})
-
 app.listen(port, () => {
   console.log(`Listening http://localhost:${port}`);
 });
 
-app.post('/api/conflito', (req, res) => {
-  res.send({ message: 'Endpoint de teste na branch master com merge'});
-});
 module.exports = app;
