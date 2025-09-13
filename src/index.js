@@ -24,7 +24,4 @@ app.listen(port, () => {
 app.post('/api/conflito', (req, res) => {
   res.send({ message: 'Endpoint de teste na branch master com merge'});
 });
-
-app.put('bug',(req,res)=>res.send('bug'))
-
 module.exports = app;
