@@ -25,8 +25,6 @@ app.post('/api/conflito', (req, res) => {
   res.send({ message: 'Endpoint de teste na branch master com merge'});
 });
 
-app.get('criandoConflito',()=>{
-  res.send('provocando um conflito')
-})
+app.put('bug',(req,res)=>res.send('bug'))
 
 module.exports = app;
